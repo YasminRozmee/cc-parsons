@@ -13,21 +13,17 @@ rect(50, 75, 20, 150);
 //second rectangle
 fill(255, 10);
 stroke(255, 0, 0);
-rect(200, 75, 20, 150);
+rect(3, 75, 20, 150);
 
 ellipse(56, 90, 55, 55);
 
-// a triangle
-//fill(100,100,255);
-//noStroke();
-triangle(10, 10, 30, 0, 100, 100);
-//fill(100,100,255);
-//noStroke();
-//triangle(30, 75, 400, 20, 86, 150);
+
 fill (0, 0, 0);
-ellipse (width/2, height/2, 100, 100);
-ellipse (width/2, height/4, 100, 100);
+ellipse (width/2, height/4 * 1, 100, 100);
+ellipse (width/2, height/4 * 2,  100, 100);
+ellipse (width/2, height/4 * 3,  100, 100);
 stroke(255, 102, 0);
+
 
 
 PImage img = createImage(66, 66, ARGB);
@@ -37,6 +33,7 @@ for (int i = 0; i < img.pixels.length; i++) {
 }
 img.updatePixels();
 image(img, 17, 17);
+image(img, 34, 34);
 image(img, 34, 34);
 
 
