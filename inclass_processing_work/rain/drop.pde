@@ -1,8 +1,8 @@
 class Drop {
   float x = random(width);
-  float y = random(-500,-50);
+  float y = random(-800,-90);
   float yspeed = random (4, 10);
-  float len = random(10, 20); 
+  float len = random(10, 30); 
   
   void fall () {
     y = y + yspeed;
@@ -10,7 +10,7 @@ class Drop {
 // gravity of the rain (making it faster)
     
     if (y > height) {
-      y = random (-200, -100);
+      y = random (-500, -200);
       yspeed = random(4, 10);
     }
   }

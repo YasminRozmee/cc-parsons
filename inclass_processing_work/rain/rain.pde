@@ -1,10 +1,10 @@
 //rain
 
-Drop[] drops = new Drop[500];
+Drop[] drops = new Drop[1000];
 
 
 void setup() {
-  size(640, 360);
+  size(500, 360);
   for (int i = 0; i < drops.length; i++) {
     drops [i] = new Drop();
   }
